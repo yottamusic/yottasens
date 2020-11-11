@@ -1,0 +1,88 @@
+{
+  "splashScreen": {
+    "name": "YottaSens",
+    "title": "音乐\n 适合所有人",
+    "copyright": "版权所有©2020 YottaMusic，Inc."
+  },
+  "intro": {
+    "page1": {
+      "title": "欢迎",
+      "content": "约塔森斯\n 终身音乐"
+    },
+    "page2": {
+      "title": "真实品质的音频",
+      "content": "真正的质量音频\n 获得高清体验"
+    },
+    "page3": {
+      "title": "EQ 设置共享",
+      "content": "可自由选择设置\n 来自多个用户"
+    },
+    "page4": {
+      "title": "约塔森斯区块链",
+      "content": "同行 2 同行音乐共享\n 创建高效的生态系统"
+    },
+    "skip": "跳",
+    "next": "下一个",
+    "gotIt": "明白了"
+  },
+  "dialog": {
+    "title": "关闭应用程序？",
+    "content": "是否要退出应用程序？",
+    "yes": "是的",
+    "no": "不"
+  },
+  "drawer": {
+    "item1": "仪表板",
+    "item2": "设备",
+    "item3": "云",
+    "item4": "博客",
+    "item5": "设置",
+    "item6": "报告问题",
+    "item7": "帮助和反馈"
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "content": "你好！欢迎来到约塔森斯仪表板"
+  },
+  "devices": {
+    "title": "设备",
+    "snackBar": "扫描 Wi-Fi 连接设备"
+  },
+  "cloud": {
+    "title": "云",
+    "content": "在云上访问您的 YottaSens 设备"
+  },
+  "blog": {
+    "title": "博客",
+    "content": "阅读约塔森关于高端音乐系统的最新文章"
+  },
+  "about": {
+    "title": "关于",
+    "content": "关于约塔森斯"
+  },
+  "settings": {
+    "title": "设置",
+    "profile": "登录/注册",
+    "profileSubtitle": "帐号设定",
+    "pushNotifications": "推送通知",
+    "onState": "上",
+    "offState": "关",
+    "languages": {
+      "option": "语言",
+      "snackBar": "正在更改语言...",
+      "title": "更改语言",
+      "english": "英语 (English - US)",
+      "chinese": "中文 (Chinese)",
+      "hindi": "印地语 (Hindi)",
+      "spanish":"西班牙语 (Spanish)"
+    }
+  },
+  "reportIssue": {
+    "title": "报告问题",
+    "content": "如果您遇到问题，请向我们报告！"
+  },
+  "helpFeedback": {
+    "title": "帮助和反馈",
+    "content": "获得即时帮助并提供反馈"
+  }
+}

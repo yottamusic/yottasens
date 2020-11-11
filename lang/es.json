@@ -1,0 +1,88 @@
+{
+  "splashScreen": {
+    "name": "YottaSens",
+    "title": "Música\n Para todos",
+    "copyright": "Derechos de autor © 2020 YottaMusic, Inc."
+  },
+  "intro": {
+    "page1": {
+      "title": "BIENVENIDO",
+      "content": "YottaSens\n Música para la vida"
+    },
+    "page2": {
+      "title": "Audio de verdadera calidad",
+      "content": "Sistemas de sonido natural\n Obtén la experiencia HD"
+    },
+    "page3": {
+      "title": "Configuración de EQ Compartir",
+      "content": "Libre para elegir la configuración\n De muchos usuarios"
+    },
+    "page4": {
+      "title": "YottaSens Blockchain",
+      "content": "Peer 2 Peer Music Sharing\n Creando un ecosistema eficiente"
+    },
+    "skip": "OMITIR",
+    "next": "SIGUIENTE",
+    "gotIt": "ENTENDIDO"
+  },
+  "dialog": {
+    "title": "Cerrar la aplicación?",
+    "content": "¿Quieres salir de la aplicación?",
+    "yes": "Si",
+    "no": "No"
+  },
+  "drawer": {
+    "item1": "Panel de control",
+    "item2": "Dispositivos",
+    "item3": "Nube",
+    "item4": "Blogs",
+    "item5": "Ajustes",
+    "item6": "Informar de un problema",
+    "item7": "Ayuda y Comentarios"
+  },
+  "dashboard": {
+    "title": "Panel de control",
+    "content": "¡Hola! Bienvenido a YottaSens Dashboard"
+  },
+  "devices": {
+    "title": "Dispositivos",
+    "snackBar": "Escaneo de dispositivos conectados a Wi-Fi"
+  },
+  "cloud": {
+    "title": "Nube",
+    "content": "Acceda a su dispositivo YottaSens sobre la nube"
+  },
+  "blog": {
+    "title": "Blogs",
+    "content": "Lea los últimos artículos sobre High-End Music Systems por YottaSens"
+  },
+  "about": {
+    "title": "Acerca de",
+    "content": "Acerca de YottaSens"
+  },
+  "settings": {
+    "title": "Configuraciones",
+    "profile": "Iniciar sesión / Registrarse",
+    "profileSubtitle": "Configuraciones de la cuenta",
+    "pushNotifications": "Notificaciones push",
+    "onState": "En",
+    "offState": "Apagado",
+    "languages": {
+      "option": "Idiomas",
+      "title": "Cambiar idioma",
+      "snackBar": "Cambiar el idioma...",
+      "english": "English (inglés)",
+      "chinese": "Chinese (idioma chino)",
+      "hindi": "Hindi (hindi)",
+      "spanish":"Spanish (Cambiar idioma)"
+    }
+  },
+  "reportIssue": {
+    "title": "Informar de un problema",
+    "content": "¡Informe a nosotros si encuentra un problema!(masculine)"
+  },
+  "helpFeedback": {
+    "title": "Ayuda y Comentarios",
+    "content": "Obtenga ayuda instantánea y proporcione comentarios"
+  }
+}

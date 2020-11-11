@@ -1,0 +1,88 @@
+{
+  "splashScreen": {
+    "name": "YottaSens",
+    "title": "Music\n For Everyone",
+    "copyright": "Copyright © 2020 YottaMusic, Inc."
+  },
+  "intro": {
+    "page1": {
+      "title": "WELCOME",
+      "content": "YottaSens\n Music For Life"
+    },
+    "page2": {
+      "title": "True Quality Audio",
+      "content": "Natural Sound Systems\n Get the HD Experience"
+    },
+    "page3": {
+      "title": "EQ Settings Share",
+      "content": "Free to choose the settings\n from across many users"
+    },
+    "page4": {
+      "title": "YottaSens Blockchain",
+      "content": "Peer 2 Peer Music Sharing\n Creating Efficient Ecosystem"
+    },
+    "skip": "SKIP",
+    "next": "NEXT",
+    "gotIt": "GOT IT"
+  },
+  "dialog": {
+    "title": "Close the App?",
+    "content": "Do you want to exit the App?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "drawer": {
+    "item1": "Dashboard",
+    "item2": "Devices",
+    "item3": "Cloud",
+    "item4": "Blogs",
+    "item5": "Settings",
+    "item6": "Report an Issue",
+    "item7": "Help and Feedback"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "content": "Hello! Welcome to YottaSens Dashboard"
+  },
+  "devices": {
+    "title": "Devices",
+    "snackBar": "Scanning for Wi-Fi Connected Devices"
+  },
+  "cloud": {
+    "title": "Cloud",
+    "content": "Access your YottaSens Device Over Cloud"
+  },
+  "blog": {
+    "title": "Blogs",
+    "content": "Read latest articles about High-End Music Systems by YottaSens"
+  },
+  "about": {
+    "title": "About",
+    "content": "About YottaSens"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Login/Register",
+    "profileSubtitle": "Account Settings",
+    "pushNotifications": "Push Notifications",
+    "onState": "On",
+    "offState": "Off",
+    "languages": {
+      "option": "Languages",
+      "title": "Change Language",
+      "snackBar": "Changing Language...",
+      "english": "English",
+      "chinese": "Chinese",
+      "hindi": "Hindi",
+      "spanish":"Spanish"
+    }
+  },
+  "reportIssue": {
+    "title": "Report an Issue",
+    "content": "Report to us if you encounter an issue!"
+  },
+  "helpFeedback": {
+    "title": "Help and Feedback",
+    "content": "Get instant Help and Provide Feedback"
+  }
+}
