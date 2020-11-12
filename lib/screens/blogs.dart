@@ -16,25 +16,17 @@ class _BlogPostsScreenState extends State<BlogPostsScreen> {
       context: context,
       barrierDismissible: false, // user must tap button!
       builder: (context) => new AlertDialog(
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
         title: new Text(allTranslations.text("dialog.title")),
         content: new Text(allTranslations.text("dialog.content")),
         actions: <Widget>[
           FlatButton(
             onPressed: () => Navigator.of(context).pop(false),
-            child: Text(
-              allTranslations.text("dialog.no"),
-              style: TextStyle(fontSize: 16.0, color: Colors.red),
-            ),
+            child: Text(allTranslations.text("dialog.no"), style: TextStyle(fontSize: 16.0, color: Colors.red)),
           ),
           FlatButton(
-            onPressed: () => SystemChannels.platform
-                .invokeMethod<void>('SystemNavigator.pop'),
-            child: Text(
-              allTranslations.text("dialog.yes"),
-              style: TextStyle(fontSize: 16.0, color: Colors.blue),
-            ),
+            onPressed: () => SystemChannels.platform.invokeMethod<void>('SystemNavigator.pop'),
+            child: Text(allTranslations.text("dialog.yes"), style: TextStyle(fontSize: 16.0, color: Colors.blue)),
           ),
         ],
       ),

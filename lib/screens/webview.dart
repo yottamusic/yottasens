@@ -73,7 +73,7 @@ class _WebViewContainerState extends State<WebViewContainer> {
 
   void showSnackBar(BuildContext context, String snackBarText) {
     final retrySnackBar = SnackBar(
-        content: Text("Received Message: $snackBarText"),
+        content: Text(snackBarText),
         duration: new Duration(seconds: 5),
         action: SnackBarAction(
           label: "OKAY",

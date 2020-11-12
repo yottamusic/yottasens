@@ -1,5 +1,8 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:multicast_dns/multicast_dns.dart';
+import 'package:yottasens/model/device.dart';
 import 'package:yottasens/utils/global_translations.dart';
 
 class CloudScreen extends StatefulWidget {
@@ -16,8 +19,7 @@ class _CloudScreenState extends State<CloudScreen> {
       context: context,
       barrierDismissible: false, // user must tap button!
       builder: (context) => new AlertDialog(
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
         title: new Text(allTranslations.text("dialog.title")),
         content: new Text(allTranslations.text("dialog.content")),
         actions: <Widget>[

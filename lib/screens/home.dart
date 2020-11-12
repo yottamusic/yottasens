@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:yottasens/screens/about.dart';
 import 'package:yottasens/screens/blogs.dart';
 import 'package:yottasens/screens/cloud.dart';
 import 'package:yottasens/screens/local.dart';
@@ -52,6 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _children = [
     LocalScreen(),
     CloudScreen(),
+    AboutScreen(),
     BlogPostsScreen(),
     SettingsScreen()
   ];
@@ -80,12 +82,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   backgroundColor: Colors.white,
                   selectedIconTheme: IconThemeData(color: Colors.white10),
                   type: BottomNavigationBarType.fixed,
-                  currentIndex: _currentIndex, // this will be set when a new tab is tapped
+                  currentIndex: _currentIndex,
                   items: [
-                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.wifi, color: _currentIndex == 0 ? Colors.black : Colors.grey), label: 'Local'),
+                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.wifi, color: _currentIndex == 0 ? Colors.black : Colors.grey), label: 'Devices'),
                     BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.cloud, color: _currentIndex == 1 ? Colors.black : Colors.grey), label: 'Cloud'),
-                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.blog, color: _currentIndex == 2 ? Colors.black : Colors.grey), label: 'Blog'),
-                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.cog, color: _currentIndex == 3 ? Colors.black : Colors.grey), label: 'Settings'),
+                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.music, color: _currentIndex == 2 ? Colors.black : Colors.grey), label: 'Music'),
+                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.blog, color: _currentIndex == 3 ? Colors.black : Colors.grey), label: 'Blog'),
+                    BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.cog, color: _currentIndex == 4 ? Colors.black : Colors.grey), label: 'Settings'),
                   ],
                   onTap: (index) {
                     setState(() {
