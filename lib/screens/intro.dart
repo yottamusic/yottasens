@@ -1,7 +1,7 @@
+import 'package:fancy_on_boarding/fancy_on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:yottasens/utils/global_translations.dart';
 import 'package:yottasens/utils/navigator.dart';
-import 'package:yottasens/widgets/WalkThrough.dart';
 
 class IntroScreen extends StatefulWidget {
   @override
@@ -11,93 +11,86 @@ class IntroScreen extends StatefulWidget {
 }
 
 class IntroScreenState extends State<IntroScreen> {
-  final PageController controller = new PageController();
-  int currentPage = 0;
-  bool lastPage = false;
 
-  void _onPageChanged(int page) {
-    setState(() {
-      currentPage = page;
-      if (currentPage == 3) {
-        lastPage = true;
-      } else {
-        lastPage = false;
-      }
-    });
-  }
+  final pageList = [
+    PageModel(
+        color: const Color(0xFF678FB4),
+        heroImagePath: 'images/yottasens-logo.png',
+        title: Text(allTranslations.text("intro.page1.title"),
+            style: TextStyle(
+              fontWeight: FontWeight.w800,
+              color: Colors.white,
+              fontSize: 34.0,
+            )),
+        body: Text(allTranslations.text("intro.page1.content"),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18.0,
+            )),
+        iconImagePath: 'images/yottasens-logo.png'),
+    PageModel(
+        color: const Color(0xFF65B0B4),
+        heroImagePath: 'images/truequality-logo.png',
+        title: Text(allTranslations.text("intro.page2.title"),
+            style: TextStyle(
+              fontWeight: FontWeight.w800,
+              color: Colors.white,
+              fontSize: 34.0,
+            )),
+        body: Text(allTranslations.text("intro.page2.content"),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18.0,
+            )),
+        iconImagePath: 'images/truequality-logo.png'),
+    PageModel(
+      color: const Color(0xFF9B90BC),
+      heroImagePath: 'images/eqshare-logo.png',
+      title: Text(allTranslations.text("intro.page3.title"),
+          style: TextStyle(
+            fontWeight: FontWeight.w800,
+            color: Colors.white,
+            fontSize: 34.0,
+          )),
+      body: Text(allTranslations.text("intro.page3.content"),
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18.0,
+          )),
+      iconImagePath: 'images/eqshare-logo.png',
+    ),
+    // SVG Pages Example
+    PageModel(
+        color: const Color(0xFF678FB4),
+        heroImagePath: 'images/blockchain-logo.png',
+        title: Text(allTranslations.text("intro.page4.title"),
+            style: TextStyle(
+              fontWeight: FontWeight.w800,
+              color: Colors.white,
+              fontSize: 34.0,
+            )),
+        body: Text(allTranslations.text("intro.page4.content"),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18.0,
+            )),
+        iconImagePath: 'images/blockchain-logo.png',
+        heroImageColor: Colors.white),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Color(0xFFEEEEEE),
-      padding: EdgeInsets.all(10.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          Expanded(
-            flex: 1,
-            child: Container(),
-          ),
-          Expanded(
-            flex: 3,
-            child: PageView(
-              children: <Widget>[
-                WalkThrough(
-                  title: allTranslations.text("intro.page1.title"),
-                  content: allTranslations.text("intro.page1.content"),
-                  imageIcon: 'images/yottasens-logo.png',
-                ),
-                WalkThrough(
-                  title: allTranslations.text("intro.page2.title"),
-                  content: allTranslations.text("intro.page2.content"),
-                  imageIcon: 'images/truequality-logo.png',
-                ),
-                WalkThrough(
-                  title: allTranslations.text("intro.page3.title"),
-                  content: allTranslations.text("intro.page3.content"),
-                  imageIcon: 'images/eqshare-logo.png',
-                ),
-                WalkThrough(
-                  title: allTranslations.text("intro.page4.title"),
-                  content: allTranslations.text("intro.page4.content"),
-                  imageIcon: 'images/blockchain-logo.png',
-                ),
-              ],
-              controller: controller,
-              onPageChanged: _onPageChanged,
-            ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: <Widget>[
-                FlatButton(
-                  child: Text(lastPage ? "" : allTranslations.text("intro.skip"),
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16.0)),
-                  onPressed: () =>
-                      lastPage ? null : YottaSensNavigator.goToHome(context),
-                ),
-                FlatButton(
-                  child: Text(lastPage ? allTranslations.text("intro.gotIt") : allTranslations.text("intro.next"),
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16.0)),
-                  onPressed: () => lastPage
-                      ? YottaSensNavigator.goToHome(context)
-                      : controller.nextPage(
-                          duration: Duration(milliseconds: 300),
-                          curve: Curves.easeIn),
-                ),
-              ],
-            ),
-          )
-        ],
+    return Scaffold(
+      body: FancyOnBoarding(
+        doneButtonText: allTranslations.text("intro.gotIt"),
+        skipButtonText: allTranslations.text("intro.skip"),
+        pageList: pageList,
+        onDoneButtonPressed: () => YottaSensNavigator.goToHome(context),
+        onSkipButtonPressed: () => YottaSensNavigator.goToHome(context),
       ),
     );
   }

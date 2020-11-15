@@ -40,6 +40,7 @@ dependencies:
   flutter_bloc: 6.1.1
   equatable: 1.2.5
   network: 0.10.0+1
+  fancy_on_boarding: 1.7.0
 
 dev_dependencies:
   flutter_test:
