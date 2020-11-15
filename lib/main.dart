@@ -1,13 +1,17 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:yottasens/blocs/discover_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:yottasens/screens/home.dart';
 import 'package:yottasens/screens/intro.dart';
 import 'package:yottasens/screens/splash.dart';
+import 'package:yottasens/services/device_discovery.dart';
 import 'package:yottasens/utils/global_translations.dart';
-import 'package:yottasens/blocs/bloc_provider.dart';
+// import 'package:yottasens/blocs/bloc_provider.dart';
 import 'package:yottasens/blocs/translations_bloc.dart';
+
+import 'blocs/bloc_provider.dart';
 
 var routes = <String, WidgetBuilder>{
   "/home": (BuildContext context) => HomeScreen(),
@@ -22,7 +26,7 @@ void main() async {
   await allTranslations.init();
 
   // Start the application
-  runApp(new YottaSensApp());
+  runApp(YottaSensApp());
 }
 
 class YottaSensApp extends StatefulWidget {
